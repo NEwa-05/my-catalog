@@ -1,0 +1,6 @@
+name: My old app
+description: |
+  My old app web container
+version: 1
+category: Development
+maintainer: NEwa <david.blaskow@data-essential.com>

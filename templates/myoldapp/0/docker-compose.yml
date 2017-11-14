@@ -1,0 +1,10 @@
+version: '2'
+services:
+  nginx:
+    image: newa/myoldapp:0.3
+    stdin_open: true
+    tty: true
+    labels:
+      io.rancher.container.pull_image: always
+    ports:
+    - 80:80/tcp
