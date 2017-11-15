@@ -6,8 +6,8 @@ services:
     tty: true
     labels:
       io.rancher.container.pull_image: always
-      traefik.domain: www.mynewapp.poc.local
-      traefik.port: ’2080’
+      traefik.frontend.rule: "Host:www.mynewapp.poc.local"
+      traefik.port: ’3080’
       traefik.enable: 'true'
     ports:
     - 3080:80/tcp
