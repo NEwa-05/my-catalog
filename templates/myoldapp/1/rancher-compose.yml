@@ -11,6 +11,6 @@ services:
     health_check:
       response_timeout: 2000
       healthy_threshold: 2
-      port: 2080
+      port: 80
       unhealthy_threshold: 3
       interval: 2000
