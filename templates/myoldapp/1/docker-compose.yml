@@ -5,10 +5,10 @@ services:
     stdin_open: true
     tty: true
     labels:
+      traefik.domain: poc.local
       io.rancher.container.pull_image: always
-      traefik.frontend.rule=Host: www.myoldapp.poc.local
-      traefik.frontend.passHostHeader: true
       traefik.port: ’2080’
+      io.rancher.container.hostname_override: www.myoldapp
       traefik.enable: 'true'
     ports:
     - 2080:80/tcp
