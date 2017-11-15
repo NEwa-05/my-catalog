@@ -7,5 +7,5 @@ services:
     labels:
       io.rancher.container.pull_image: always
       traefik.port: 80
-      traefik.frontend.rule: 'Host:www.myoldapp.poc.local'
+      traefik.frontend.rule: 'Host:myoldapp.poc.local'
       traefik.enable: 'true'
