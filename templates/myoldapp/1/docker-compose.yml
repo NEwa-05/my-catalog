@@ -9,5 +9,3 @@ services:
       traefik.frontend.rule: "Host:www.myoldapp.poc.local"
       traefik.port: ’2080’
       traefik.enable: 'true'
-    ports:
-    - 2080:80/tcp
